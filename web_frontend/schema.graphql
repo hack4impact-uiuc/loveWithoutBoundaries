@@ -1,0 +1,21 @@
+# Self Descriptive
+type Lesson {
+  name: String
+}
+
+# Your Root Mutation
+type Mutation {
+  createStudent(name: String): Student
+  createLesson(name: String): Lesson
+}
+
+# Your Root Query
+type Query {
+  students: [Student]
+  lessons: [Lesson]
+}
+
+# Self Descriptive
+type Student {
+  name: String
+}
