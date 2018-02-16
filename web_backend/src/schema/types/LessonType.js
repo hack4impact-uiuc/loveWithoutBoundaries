@@ -8,6 +8,15 @@ const Lesson = new GraphQLObjectType({
     return {
       name: {
         type: GraphQLString,
+      },
+      quiz: {
+        type: GraphQLString, //Change to Quiz later
+      },
+      worksheets: {
+        type: GraphQLString,
+      },
+      notes: {
+        type: GraphQLString
       }
     };
   },
